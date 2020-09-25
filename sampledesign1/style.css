@@ -1,0 +1,141 @@
+*{
+	margin:0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+
+body{
+	font-family: 'Poppins', sans-serif;
+}
+header{
+    display: flex;
+    width: 60%;
+    margin: auto;
+    height: 15vh;
+    align-items: center;
+}
+.logo-container,.nav-links, .cart{
+    display: flex;
+
+}
+.logo-container{
+    flex: 1;
+
+
+}
+.tcc_logo{
+    font-weight: 400;
+    margin: 5px;
+}
+nav{
+    
+    flex:7;
+}
+.nav-links{
+    text-align: left;
+    justify-content: space-around;
+    list-style: none;
+
+    
+}
+.nav-link{ 
+    color: lightslategray;
+    font-size: 18px;
+    text-decoration: none;
+    flex: 1;
+
+
+}
+.student{
+   justify-content: flex-end;
+    flex: 1;
+	
+}
+.presentation{
+    display: flex;
+    width: 70%;
+    margin:  auto;
+    min-height: 80vh;
+    align-items: center;
+}
+.introduction{
+    flex: 1;
+}
+.intro-text {
+    font-size:44;
+    font-weight: 400;
+    background: linear-gradient(to right,#494949,#6f6f6f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+.cta{
+    padding: 50px 0px 0px 0px;
+}
+.cta-select{
+    border: 2px solid #0f7526;
+    background: transparent;
+    color: rgb(0, 0, 0);
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+
+}   
+.cta-select2{
+    border: 2px solid #0f7526;
+    background: transparent;
+    color: rgb(0, 0, 0);
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.cover{
+    
+    flex: 1;
+    display: flex;
+    height: 30vh;
+}
+.cover img{
+    height: 100%;
+    filter: drop-shadow(0px 5px 3px black);
+}
+@media screen and (max-width 1024px){
+    .presentation{
+        flex-direction: column;
+
+    }
+    .introduction{
+        margin-top:  5vh;
+        text-align: center;
+    }
+    .intro-text{
+        font-size: 15px;
+
+    }
+    .intro-text p{
+        font-size: 10px;
+
+     }
+     .cta{
+         padding: 10px 0px 0px 0px;
+     }
+     .cta-select2{
+         bottom: 5%;
+         right: 50%;
+         width: 50%;
+         transform: translate(50%,5%);
+     }
+     .cover img{
+         height: 50%;
+
+     }
+    
+
+
+}
+
+
